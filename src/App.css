@@ -1,0 +1,583 @@
+.spinner-border{
+  position: absolute;top: 50%;left: 45%;
+}
+.home{
+  display: flex;justify-content: center;align-items: center;
+  height: 500px; font-size: 40px;text-shadow: 2px 2px 2px;
+}
+@media(max-width:650px){
+  .home{
+    font-size: 25px;
+  }
+}
+.loginbt,.signupbtn{
+  margin: 10px!important;
+}
+
+.registercont{
+  display: flex;justify-content: center;align-items: center;height: 650px; 
+ 
+}
+.welcome{
+  font-size: 50px; font-weight: 500; font-family: serif;
+}
+.inpbox{
+  margin: 20px; width: 400px;
+}
+.form{
+  display: flex;align-items: center;flex-direction: column; background-color:white;border-radius: 20px; padding-bottom: 10px;margin-bottom: 10px;
+}
+.loginbtn{
+  width: 400px;margin: 20px!important;
+}
+.error{
+  color: red;
+}
+
+
+
+
+@media (max-width:450px){
+
+  .welcome{
+      font-size: 30px; font-weight: 500;
+  }
+  .inpbox{
+      margin: 20px; width: 300px;
+  }
+  .form{
+      border-radius: 15px;
+  }
+  .loginbtn{
+      width: 300px;margin: 15px!important;
+  }
+  .error{
+      color: red;
+  }
+}
+ /*Memberpage*/
+.content{
+  display: flex;
+}
+.sidebar{
+  width: 150px; background-color: aliceblue;
+}
+.profile{
+  margin-right: 10px;
+}
+.sbbtns{
+  width: 100%; text-align: left;
+}
+.sblinks{
+ width: 100%;
+}
+.memberlogoutbtn{
+  float: right;
+}
+/*Homepage*/
+.sovicon{
+  height: 40px;
+}
+
+
+@media(max-width:500px){
+.sovicon{
+  height: 25px;
+}
+.loginbt,.signupbtn{
+height: 26px;
+}
+}
+
+/*Memberpage*/
+.srchbar2{
+  display: none;
+}
+
+.bi-person-circle{
+  margin-right: 10px; margin-left: 10px; font-size: 30px;
+}
+.navpic{
+  height:40px ;width:40px ;border-radius: 50%;margin-right: 10px; margin-left: 10px;
+}
+
+/*Askquestion*/
+.headers{
+  width: 100%;
+}
+
+.stitle{
+  margin: 30px; font-size: 40px;
+}
+.titledesc{
+  padding: 25px; background-color:aqua;border: 1px solid rgb(0, 255, 255); border-radius: 4px;margin-left: 30px;margin-bottom: 10px;
+}
+.title{
+  padding: 25px; background-color:rgb(245, 245, 245);border: 1px solid  white; border-radius: 4px;margin: 10px;margin-left: 30px;width: 700px;
+  height: min-content;
+
+}
+.header2{
+  display: flex;flex-wrap: wrap-reverse;
+}
+.bi-pen{
+  font-size: 50px;margin: 10px;
+}
+.titlecard{
+  width: 400px; margin: 10px;
+}
+.cardinfo{
+  font-size: small;
+}
+.sinfo{
+  margin-bottom: 15px;
+}
+
+.header3,.header4,.header5{
+  padding: 25px; background-color:rgb(245, 245, 245);border: 1px solid  white; border-radius: 4px;margin: 10px;margin-left: 30px;
+}
+
+.tag{
+  margin: 5px; background-color: rgb(234, 234, 234);border-radius: 10px;padding: 5px;
+}
+.postbtn{
+  margin-left: 30px; width: 200px; margin: 30px;margin-top: 10px;
+}
+
+/*Questionspage*/
+
+.questionscont{
+  display: flex;flex-direction: column;margin-right: 40px; margin-top: 10px;
+}
+.questionsheader{
+  display: flex;justify-content: space-between;margin-top: 20px;
+}
+.allquestions{
+  display: flex;flex-direction: column;align-items: center;
+}
+
+.question-summary{
+   padding:40px ;border: 1px solid black;width: max-content;  border-bottom: none;padding-bottom: 20px;padding-left: 10px;display: flex;
+   box-shadow: 2px 2px 4px ;
+}
+.summary-counts{
+  width: 100px;
+}
+.summary-intro{
+  display: flex;flex-direction: column; width:650px;margin-left: 15px;
+}
+.summary-content{
+  overflow: hidden;width: 100%;height: 50px;
+  text-overflow: ellipsis;margin-bottom: 10px;
+}
+.summary-title,.summary-content,.summary-tags{
+  width: 100%;
+}
+.nvotes,.nanswers,.nviews{
+  text-align: right;
+}
+.summary-title{
+  color: rgb(0, 0, 115);font-size: 20px;
+}
+.summary-title:hover{
+  color: blue;cursor: pointer;
+}
+.summary-footer{
+  float: right;
+}
+.allquestions .question-summary:nth-child(1){
+  border-radius: 5px 5px 0 0;
+}
+
+/*Questionpage*/
+
+
+.questionheader{
+  display: flex;justify-content: space-between;margin-top: 20px;
+}
+
+.ask{
+  margin-right: 10px;
+}
+.questiontitle{
+  font-size: 22px; font-weight: 500;margin-left: 10px;
+}
+.votes{
+  margin-left: 10px;
+}
+
+.questioncontent,.questionconclusion{
+  margin: 10px;margin-bottom: 15px;padding: 20px;
+}
+
+.postcomments{
+  width: 100%; margin-left: 20px;margin-top: 20px;
+}
+
+.postcbtn{
+   width: 200px; margin: 15px; margin-left: 0;
+}
+.comment{
+  margin-top: 10px; border: 1px solid white;border-radius: 5px;padding: 5px; width: 90%;
+}
+.commentdiv{
+  font-size: 20px; width: 90%;font-family:'Times New Roman', Times, serif;
+}
+.emaildiv{
+  text-align: right;
+}
+
+/*Questionpage media*/
+
+@media(max-width:1200px){
+  .questionheader{
+    display: flex;justify-content: space-between;margin-top: 20px;
+  }
+  .qcomment{
+    font-size: 20px;
+  }
+  .addacomment{
+    font-size: 18px;
+  }
+  .ask{
+    margin-right: 10px;font-size: small;width: 160px;
+  }
+  .questiontitle{
+    font-size: 15px; font-weight: 500;margin-left: 10px;
+  }
+  .votes{
+    margin-left: 10px;
+  }
+  
+  .questioncontent,.questionconclusion{
+    margin: 10px;margin-bottom: 15px;padding: 10px;font-size: small;
+  }
+  
+  .postcomments{
+    width: 100%; margin-left: 5px;margin-top: 10px;
+  }
+  
+  .postcbtn{
+     width: 200px; margin: 10px; margin-left: 0;font-size: small;
+  }
+  .comment{
+    margin-top: 10px; border: 1px solid white;border-radius: 5px;padding: 5px; width: 90%;
+  }
+  .commentdiv{
+    font-size: 20px; width: 90%;font-family:'Times New Roman', Times, serif;
+  }
+  .emaildiv{
+    text-align: right;
+  }
+}
+
+/*Profilepage*/
+
+.profileheader{
+  display: flex;align-items: center;
+}
+.profilepic{
+  font-size: 100px;
+}
+.pic{
+  height: 120px;width: 120px;border-radius: 50%;margin: 20px;
+}
+.firstname,.lastname,.pemail{
+  margin-left: 10px;
+}
+.name{
+  font-size: 30px;
+}
+.pemail{
+  font-size: 20px;font-weight: 500;
+}
+.commentbtn{
+  margin: 10px;float: right;
+}
+
+
+/*Questionspage media*/
+
+@media (min-width:750px) and (max-width:950px){
+  .questionscont{
+   margin-right: 20px; margin-top: 10px;
+  }
+  .questionsheader{
+    margin-top: 15px;
+  }
+  .question-summary{
+     padding:20px ;padding-bottom: 20px;padding-left: 10px;
+  }
+ 
+  .summary-counts{
+    width: 60px;font-size: 10px;
+  }
+  .summary-intro{
+    width:500px;margin-left: 10px;height: 100px;
+  }
+  .summary-content{
+    height: 28px;
+    margin-bottom: 10px;
+  }
+  .summary-title{
+    font-size: 16px;
+  }
+  .summary-content{
+    font-size: 10px;
+  }
+  .tag{
+    font-size: small;padding: 4px;border-radius: 8px;
+  }
+}
+
+@media (max-width:750px){
+  .content{
+    display: block;
+  }
+  .questionsheader{
+    margin-top: 0;
+  }
+  .questionsheadertitle{
+    font-size: 20px;
+  }
+  .allquestions{
+    display: flex;flex-direction: column;align-items: center;margin: 0;
+  }
+  .sidebar{
+    background-color: aliceblue;width: 100%;
+  }
+  .sidebarlist{
+    display: flex;flex-direction: row;justify-content: space-evenly;
+  }
+  .profile{
+    margin-right: 10px;
+  }
+  .public{
+    display: none;
+  }
+  .sbbtns{
+    width: 100%; text-align: left;font-size: small;
+  }
+  .sblinks{
+   width: 100%;
+  }
+  .memberlogoutbtn{
+    float: right;
+  }
+  .questionscont{
+    margin-right: 10px; margin-top: 10px;
+   }
+   .qemail{
+    font-size: small;margin-right: 5px;
+   }
+   .question-summary{
+      padding:10px ;padding-bottom: 15px;padding-left: 10px;display: block;width: 100%;height:min-content;
+   }
+   .summary-counts{
+    font-size: 10px;display: flex;width: 100%;
+   }
+   .nviews,.nvotes,.nanswers{
+    margin-left: 10px;
+   }
+   .summary-intro{
+     width:100%;margin-left: 10px;height: 106px;
+   }
+   
+   .summary-content{
+     height: 28px;
+     margin-bottom: 8px;font-size: 10px;
+   }
+   .summary-title{
+     font-size: 15px; width: 100%;
+   }
+   .tag{
+    margin: 3px;border-radius: 5px;padding: 2px;font-size: 10px;
+  }
+  .srchbar2{
+    display: block;margin: 0; margin-bottom: 10px;
+  }
+  .srchbar1{
+    display: none;
+  }
+
+}
+
+/*AskaQuestion  media*/
+
+@media(min-width:700px)and(max-width:1150px){
+  .stitle{
+    margin: 30px; font-size: 35px;
+  }
+  .titledesc{
+    padding: 25px; background-color:aqua;border: 1px solid rgb(0, 255, 255); border-radius: 4px;margin-left: 30px;margin-bottom: 10px;
+  }
+  .title{
+    padding: 25px; background-color:rgb(245, 245, 245);border: 1px solid  white; border-radius: 4px;margin: 10px;margin-left: 30px;width: 700px;
+    height: min-content;
+  
+  }
+  .header2{
+    display: flex;flex-wrap: wrap-reverse;
+  }
+
+  .titlecard{
+    width: 400px; margin: 10px;
+  }
+  .cardinfo{
+    font-size: small;
+  }
+  .sinfo{
+    margin-bottom: 15px;
+  }
+  
+  .header3,.header4,.header5{
+   width: 100%;margin-right: 10px;
+  }
+  
+  .tag{
+    margin: 5px; background-color: rgb(234, 234, 234);border-radius: 10px;padding: 5px;
+  }
+  .postbtn{
+    margin-left: 30px; width: 200px; margin: 30px;margin-top: 10px;
+  }
+}
+
+
+@media (max-width:700px){
+  .stitle{
+    margin: 10px; font-size: 25px;font-weight: 500;
+  }
+  .titledesc{
+    padding: 10px; background-color:aqua;border: 1px solid rgb(0, 255, 255); border-radius: 3px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;
+  }
+  .des1{
+    font-size: 18px;
+  }
+  .des2{
+    font-size: 15px;
+  }
+  .des3{
+    font-size: 12px;
+  }
+  .title{
+    padding: 10px; background-color:rgb(245, 245, 245);border: 1px solid  white; border-radius: 4px;margin: 5px;margin-left:5px;width:100%;
+    height: min-content;
+  
+  }
+  .sinfo{
+    margin-bottom: 15px;
+  }
+  
+  .header3,.header4,.header5{
+    padding: 10px; background-color:rgb(245, 245, 245);border: 1px solid  white; border-radius: 4px;margin: 5px;width: 100%;
+  }
+  
+  .tag{
+    margin: 5px; background-color: rgb(234, 234, 234);border-radius: 10px;padding: 5px;
+  }
+  .postbtn{
+    margin-left: 30px; width: 200px; margin: 30px;margin-top: 10px;
+  }
+}
+/*Profilepage media*/
+
+@media(max-width:600px){
+  .profilepic{
+    font-size: 60px;
+  }
+  .pic{
+    height: 80px;width: 80px;margin: 15px;
+  }
+  .firstname,.lastname,.pemail{
+    margin-left: 10px;
+  }
+  .psi{
+    height: min-content;
+  }
+  .name{
+    font-size: 25px;
+  }
+  .pemail{
+    font-size: 15px;font-weight: 500;
+  }
+  .commentbtn{
+    margin: 10px;float: right;font-size: small;
+  }
+  .commentdiv{
+    font-size: 16px;
+  }
+  .commentemail{
+    font-size: 10px;
+  }
+}
+
+@media(max-width:400px){
+  .profilepic{
+    font-size: 40px;
+  }
+  .pic{
+    height: 60px;width: 60px;;margin: 10px;
+  }
+  .name{
+    font-size: 20px;
+  }
+  .pemail{
+    font-size: 12px;font-weight: 500;
+  }
+  .yourquetitle{
+    font-size: 15px;
+  }
+}
+
+.email-status,.resmsg{
+  display: flex;justify-content: center;align-items: center;font-size: 40px; font-family: monospace;text-align: center;height: 500px;
+}
+
+/*Companiespage*/
+
+.companytitle{
+  font-size: 24px;font-weight: 500;
+}
+.caddress{
+  font-size: small;
+}
+.compcont{
+  display: flex;align-items: center;margin: 10px;border-top: 1px solid #000;padding-bottom: 10px;
+}
+.loc,.building{
+  margin-right: 10px;
+}
+.complogo{
+  height: 100px;width:100px ;
+}
+.compinfo{
+  margin-left: 10px;
+}
+.compcontent{
+  overflow: hidden;width: 100%;height: 50px;
+  text-overflow: ellipsis;
+}
+
+@media(max-width:500px){
+  .companytitle{
+    font-size: 18px;font-weight: 500;
+  }
+  .caddress{
+    font-size: small;
+  }
+  .compcont{
+    padding-bottom: 6px;
+  }
+  .loc,.building{
+    margin-right: 6px;
+  }
+  .complogo{
+    height: 60px;width:60px ;
+  }
+  .compinfo{
+    margin-left: 5px;
+  }
+  .compcontent{
+   height: 50px;
+  }
+}
