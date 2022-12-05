@@ -328,6 +328,9 @@ height: 26px;
   .tag{
     font-size: small;padding: 4px;border-radius: 8px;
   }
+  .psi{
+    height: min-content;
+  }
 }
 
 @media (max-width:750px){
@@ -398,6 +401,9 @@ height: 26px;
   }
   .srchbar1{
     display: none;
+  }
+  .psi{
+    height: min-content;
   }
 
 }
