@@ -44,6 +44,15 @@ export function Questionpage({email}){
    },[questions])
     
     const question=questions[index]
+
+    const [disp,setDisp]=useState('')
+
+    const styles1={
+        display:disp
+    }
+    const styles2={
+        display:disp==''?'none':''
+    }
  
     return(
         <div className="container-fluid">
@@ -99,7 +108,7 @@ export function Questionpage({email}){
                     onChange={newcontent=>setComment(newcontent)}
                     />
                     </div>
-                    <button className="btn btn-outline-primary postcbtn" onClick={()=>{
+                    <button className="btn btn-outline-primary postcbtn c1" style={styles1} onClick={()=>{
                         if(comment!='' && comment!='<p><br></p>'){
                             const newcomment={
                                 comment:comment,
@@ -107,11 +116,12 @@ export function Questionpage({email}){
                             }
                             async function postcomment(){
                                 try {
+                                    setDisp('none')
                                     await axios.put('https://stackoverflow-clonebe.onrender.com/questions/postcomment',{
                                     title:question.title,
                                     comments:[...question.comments,newcomment]
                                 })
-                                
+                                setDisp('')
                                 } catch (error) {
                                     console.log(error)
                                 }
@@ -122,6 +132,10 @@ export function Questionpage({email}){
                             alert('Enter all the fields to post!')
                         }
                     }}>Post your comment</button>
+                    <button className="btn btn-outline-primary postcbtn c2"  style={styles2}>
+                <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
                 </div>
             </div>
           :<div className="spinner-border" style={{width:'3rem',height:'3rem'}} role="status">

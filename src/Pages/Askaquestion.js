@@ -36,6 +36,15 @@ export function Askaquestion({email}) {
        setTags([...tags])
     }
 
+    const [disp,setDisp]=useState('')
+
+    const styles1={
+        display:disp
+    }
+    const styles2={
+        display:disp==''?'none':''
+    }
+
     return (
       <div className="headers">
 
@@ -104,15 +113,17 @@ export function Askaquestion({email}) {
            
          </div>
          <div >
-         <button className="btn btn-outline-primary postbtn" onClick={()=>{
+         <button className="btn btn-outline-primary postbtn ba1" style={styles1} onClick={()=>{
             if(title!='' && (content!='' && content!='<p><br></p>') && (conclusion!='' && conclusion!='<p><br></p>') && tags!=''){
                 async function postquestion(){
+                    setDisp('none')
                     try {
                         await axios.post('https://stackoverflow-clonebe.onrender.com/questions/ask',{
                         question:{...post}
                     })
                     navigate(-1)
                     } catch (error) {
+                        setDisp('')
                         console.log(error)
                     }
                 }
@@ -122,6 +133,10 @@ export function Askaquestion({email}) {
                 alert('Enter all the fields to post!')
             }
          }}>Post</button>
+         <button className="btn btn-outline-primary postbtn ba2"  style={styles2}>
+                <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
          </div>
       </div>
     );
