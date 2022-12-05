@@ -2,7 +2,7 @@ import { Button, TextField } from "@mui/material"
 import axios from "axios"
 import { Form, Formik, useFormik } from "formik"
 import { useEffect, useState } from "react"
-import { Navigate, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 export function Editprofile(){
     const {email}=useParams()
@@ -38,7 +38,6 @@ export function Editprofile(){
     display:disp==''?'none':''
   }
 
-
 const onSubmit=(values)=>{
     async function editprofile(){
         try {
@@ -73,7 +72,6 @@ const formik=useFormik({
     onSubmit,
     validate
 })
-
 
     return(
         <div className="container-fluid registercont">

@@ -1,8 +1,7 @@
 import { Button } from "@mui/material"
-import { style } from "@mui/system"
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export function Profilepage({email}) {
   

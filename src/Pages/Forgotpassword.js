@@ -2,11 +2,8 @@ import { Button, TextField } from "@mui/material";
 import axios from "axios";
 import { Form,Formik, useFormik, } from "formik";
 import { useEffect, useState } from "react";
-import { Link, useNavigate} from "react-router-dom";
 
 export function Forgotpassword() {
-
-  const navigate=useNavigate()
    
   const [data,setData]=useState()
   const [disp,setDisp]=useState('')

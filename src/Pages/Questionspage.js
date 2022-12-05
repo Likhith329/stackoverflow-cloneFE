@@ -1,4 +1,3 @@
-import { Backdrop, CircularProgress } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +22,7 @@ export function Questionspage({searchedtag,setSearchedtag}) {
   })
 
   let newarr=[],searchedresults=[]
-  
+
   for(let i=0;i<tagarrs.length;i++){
     for(let j=0;j<tagarrs[i].length;j++){
       if(tagarrs[i][j].toLowerCase().includes(searchedtag.toLowerCase())){

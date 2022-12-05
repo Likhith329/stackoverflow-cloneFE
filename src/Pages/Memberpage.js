@@ -12,8 +12,6 @@ import { Editprofile } from './Editprofile';
 export function Memberpage() {
   const {email}=useParams()
 
- 
-
   const [imgsrc,setImgsrc]=useState(undefined)
  
   useEffect(()=>{
@@ -23,10 +21,6 @@ export function Memberpage() {
     }
     getdata()
   })
-
- 
-
-
 
   const navigate=useNavigate()
 

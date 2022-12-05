@@ -1,7 +1,6 @@
 import { Button } from "@mui/material";
-import { Outlet, Route, Routes, useNavigate } from "react-router-dom";
-import { Loginpage } from "./Loginpage";
-import { Registerpage } from "./Registerpage";
+import { Outlet, useNavigate } from "react-router-dom";
+
 
 export function Home() {
   const navigate=useNavigate()

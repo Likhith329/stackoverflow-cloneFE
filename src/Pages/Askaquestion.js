@@ -1,9 +1,7 @@
-import { Autocomplete, Button, TextField } from "@mui/material";
 import axios from "axios";
 import JoditEditor from "jodit-react";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 
 export function Askaquestion({email}) {
     const navigate=useNavigate()

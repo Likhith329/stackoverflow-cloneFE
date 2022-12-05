@@ -23,7 +23,6 @@ export function Companiespage(){
                         <div className="caddress"><span className="loc"><i className="bi bi-geo-alt"></i> {company.loc}</span><span className="building"><i className="bi bi-building"></i></span>{company.building}</div>
                         <div className="compcontent">{company.content}</div>
                     </div>
-                    
                     </div>
                 )):<div className="spinner-border" style={{width:'3rem',height:'3rem'}} role="status">
                 <span className="visually-hidden">Loading...</span>
