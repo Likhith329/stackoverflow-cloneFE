@@ -3,7 +3,7 @@
 }
 .home{
   display: flex;justify-content: center;align-items: center;
-  height: 500px; font-size: 40px;text-shadow: 2px 2px 2px;
+  height: 500px; font-size: 40px;text-shadow: 2px 2px 2px;font-family:'Times New Roman', Times, serif;
 }
 @media(max-width:650px){
   .home{

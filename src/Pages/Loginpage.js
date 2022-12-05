@@ -23,16 +23,26 @@ export function Loginpage() {
     password:''
   }
 
+  const [disp,setDisp]=useState('')
+
+  const styles1={
+    display:disp
+  }
+  const styles2={
+    display:disp==''?'none':''
+  }
+
   const onSubmit=(values)=>{
     async function login(){
       try {
+           setDisp('none')
           await axios.post('https://stackoverflow-clonebe.onrender.com/users/login',{
           user:{...values}
       }).then(res=>{
         navigate(`/memberpage/${values.email}`)
         console.log(res.data)})
         .catch(res=>{
-        console.log(res.response.data)
+          setDisp('')
         alert('Incorrect password!')
       })
       } catch (error) {
@@ -73,9 +83,13 @@ export function Loginpage() {
               </div>
               <div className="inpbox">
                 <TextField className='textinp' variant="outlined" type={'password'} label={'Enter Password'} value={formik.values.password} name='password' onChange={formik.handleChange} onBlur={formik.handleBlur} fullWidth></TextField>
-                <div>{formik.errors.password && formik.touched.password?<div>{formik.errors.password}</div>:null}</div>
+                <div>{formik.errors.password && formik.touched.password?<div  className="error">{formik.errors.password}</div>:null}</div>
               </div>
-              <Button variant='contained' type='submit' className="loginbtn">Login</Button>
+              <Button variant='contained' type='submit' className="loginbtn b1" style={styles1}>Login</Button>
+              <Button variant="contained" className="loginbtn b2" type="button" style={styles2}>
+                <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </Button>
               <div><Link to={'/forgotpassword'}>forgot password?</Link></div>
               <div>Don't have an account? <Link to={'/register'}>Sign up</Link></div>
            

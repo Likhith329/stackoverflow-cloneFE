@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export function Questionspage({searchedtag,setSearchedtag}) {
   const [questions,setQuestions]=useState([])
+
  useEffect(()=>{
      async function getdata(){
        const resp=await axios.get('https://stackoverflow-clonebe.onrender.com/questions/get')
@@ -22,6 +23,7 @@ export function Questionspage({searchedtag,setSearchedtag}) {
   })
 
   let newarr=[],searchedresults=[]
+  
   for(let i=0;i<tagarrs.length;i++){
     for(let j=0;j<tagarrs[i].length;j++){
       if(tagarrs[i][j].toLowerCase().includes(searchedtag.toLowerCase())){

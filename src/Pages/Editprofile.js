@@ -29,11 +29,20 @@ export function Editprofile(){
     getdata()
   },[user])
 
+  const [disp,setDisp]=useState('')
+
+  const styles1={
+    display:disp
+  }
+  const styles2={
+    display:disp==''?'none':''
+  }
+
 
 const onSubmit=(values)=>{
-    console.log(values)
     async function editprofile(){
         try {
+            setDisp('none')
             await axios.put('https://stackoverflow-clonebe.onrender.com/users/editprofile',{
                 firstname:values.firstname,
                 lastname:values.lastname,
@@ -43,6 +52,7 @@ const onSubmit=(values)=>{
             navigate(-1)
         }
          catch (error) {
+            setDisp('')
             console.log(error)
         }
     }
@@ -84,7 +94,11 @@ const formik=useFormik({
                     <div >{formik.errors.image && formik.touched.image?<div className="error">{formik.errors.image}</div>:null}</div>
                 </div>
             
-                <Button variant='contained' type='submit' className="loginbtn">Update</Button>
+                <Button variant='contained' type='submit' className="loginbtn be1" style={styles1}>Update</Button>
+                <Button variant="contained" className="loginbtn be2" type="button" style={styles2}>
+                <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </Button>
             </Form>
             </Formik>:''}
         </div>
