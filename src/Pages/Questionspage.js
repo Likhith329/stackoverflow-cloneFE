@@ -83,7 +83,8 @@ export function Questionspage({searchedtag,setSearchedtag}) {
                   <span key={ind} className="tag">{tag}</span>
                 ))}
                 </div>
-                <div className="summary-footer"><b className="qemail">{question.email}</b></div>
+                <div className="summary-footer"><b className="qemail">{question.email}</b> <span>time</span></div>
+              
               </div>
             </div>
         </div>
