@@ -25,7 +25,6 @@ export function Registerpage() {
             })
             navigate('/login')
             } catch (error) {
-                alert('email already exist!')
                 console.log(error)
             }
         }
